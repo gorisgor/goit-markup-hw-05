@@ -531,7 +531,6 @@ input {
   align-items: center;
   padding-left: 24px;
 }
-
 .footer-btn-icon {
   position: absolute;
   top: 50%;
@@ -539,8 +538,6 @@ input {
   fill: #FFFFFF;
   transform: translateY(-50%);
 }
-
-
 /* ---------------------------- */
 /* --------backdrop----------- */
 .backdrop {
@@ -548,7 +545,17 @@ input {
   height: 100%;
   position: fixed;
   top: 0;
+  left: 0;
   background: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  position: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 .modal {
   width: 408px;
@@ -556,29 +563,39 @@ input {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   padding: 24px;
   border-radius: 4px;
   background-color: #fcfcfc;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
-  margin-left: auto;
   position: absolute;
-  width: 24px;
-  height: 24px;
   top: 24px;
   right: 24px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
-  cursor: pointer;
-  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn:hover, 
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
 }
 .modal-close-btn-icon {
-  
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn:hover > .modal-close-btn-icon,
+.modal-close-btn:focus > .modal-close-btn-icon {
+  fill: #ffffff;
 }
 .modal-title {
   color: #2e2f42;
@@ -586,7 +603,9 @@ input {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
   margin-bottom: 18px;
+  margin-top: 48px;
 }
 .modal-label {
   display: block;
@@ -642,6 +661,11 @@ input {
   left: 16px;
   transform: translateY(-50%);
 }
+.checkbox-line {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
 .checkbox-label {
   color: #8E8F99;
   font-size: 12px;
@@ -649,9 +673,7 @@ input {
   letter-spacing: 0.04em;
 }
 .checkbox-label-input {
-}
-.checkbox-span {
-  
+  cursor: pointer;
 }
 .checkbox-link {
   color: #4D5AE5;
@@ -659,6 +681,11 @@ input {
   line-height: 1.33;
   letter-spacing: 0.04em;
   text-decoration-line: underline;
+}
+.button-wrap {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
 }
 .submit-btn {
   border: none;
@@ -673,5 +700,5 @@ input {
   letter-spacing: 0.04em;
   cursor: pointer;
   min-width: 169px;
-  height: 56px;
+  height: 56px; 
 }
