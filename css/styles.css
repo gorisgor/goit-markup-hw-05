@@ -474,39 +474,36 @@ input {
 .footer-form {
   display: flex;
   gap: 24px;
-  align-items: flex-end;
-  margin-left: auto;
 }
 .footer-label-wrap {
 
 }
-.footer-label {
-  display: block;
+.footer-form-text {
   margin-bottom: 16px;
-  color:  #FFF;
+  color:  #ffffff;
   text-align: left;
   font-size: 16px;
   font-weight: 500;
   line-height: 1,5;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
 }
 .footer-input {
   width: 264px;
   height: 40px;
-  color: #FFF;
+  color: #ffffff;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
   padding-left: 16px;
-  background-color: #2E2F42;
+  background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #FFF;
+  border: 1px solid #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 .footer-input::placeholder {
-  color: #FFF;
+  color: #ffffff;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -672,7 +669,7 @@ input {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .checkbox-line {
+.checkbox-line {
   display: flex;
   gap: 8px;
   align-items: flex-start;
@@ -684,16 +681,16 @@ input {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
-.checkbox-label-input {
+/* .checkbox-label-input {
   cursor: pointer;
-}
+} */
 .checkbox-link {
   color: #4D5AE5;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   text-decoration-line: underline;
-} */
+}
 .fake-chekbox {
   width: 16px;
   height: 16px;
