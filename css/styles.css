@@ -524,6 +524,9 @@ input {
   align-items: center;
   padding-left: 24px;
 }
+.footer-btn:hover, .footer-btn:focus {
+  background-color: #404bbf;
+}
 .footer-btn-icon {
   fill: #ffffff;
   margin-left: 16px;;
