@@ -396,7 +396,7 @@ input {
 /* ------------------------------------------------ */
 /* ------------------Footer------------------------ */
 
-.basement {
+.footer {
   background: #2e2f42;
   padding: 100px 0;
 }
@@ -415,7 +415,7 @@ input {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.basement-logoz {
+.footer-logoz {
   color: #f4f4fd;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -424,7 +424,7 @@ input {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.basement-discr {
+.footer-discr {
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
